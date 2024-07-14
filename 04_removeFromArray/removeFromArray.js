@@ -3,7 +3,6 @@ const removeFromArray = function (array, ...element) {
     for (let i = array.length; i--;) {
         for (let j = 0; j < element.length; j++) {
             if (array[i] === element[j]) {
-                console.log("Ang tatanggalin", array[i], " at ", element[j])
                 newArray.splice(i, 1);
             }
         }
